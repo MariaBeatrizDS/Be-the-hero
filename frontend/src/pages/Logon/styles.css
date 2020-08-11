@@ -1,0 +1,29 @@
+.logon-container{
+    width: 100%;
+    max-width: 1120px; /* largura de 100% mas com altura maxima de 1120*/
+    height: 100vh; /* ocupa a altura toda do corpo, para centralizar tudo */
+    margin: 0 auto; /* faz com que o conteudo fique sempre centralizado */
+
+    display: flex; /* flexbox layout, se ua muito hoje em dia na web, deixa os itens nesse formato "flex". vão ficar um ao lado do outro, pois por padrão
+                    quando você coloca 'display flex' todos os itens que estão dentro dessa div logon conteiner, vão ficam um do lado do outro*/
+    align-items: center; /* alinha itens verticalmente ao centro */
+    justify-content: space-between; /* alinha horizontalmente ao centro*/
+}
+
+.logon-container section.form{
+    width: 100%;
+    max-width: 350px; /* o 100% e o max, é mais por questão da responsividade depois*/
+    margin-right: 30px; /* da uma ditanciada da imagem para logo */
+}
+
+.logon-container section.form form{
+    margin-top: 100px; /* distância o logo do formulário */
+}
+
+.logon-container section.form form h1{
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+/* o input e o botão se repetem algumas vezes pelas páginas, então estilizaremos de uma forma mais global */
+

@@ -1,0 +1,90 @@
+/* estilisações que tem em todas as páginas */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap'); /* importar font direto do google.*/
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box; /* faz com que o padding dos elementos seja anexado na sua largura e altura e não somados*/
+}
+
+body {
+    font: 400 14px Roboto, sans-serif;
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased; /* vai dar uma melhorada na vizualização da fonte no google chrome */
+}
+
+input, button, textarea {
+    font: 400 18px Roboto, sans-serif;
+}
+
+button {
+    cursor: pointer; /* cursor com o iconezinho pra clicar. */
+}
+
+/* costumizando botões e inputs */
+
+form input{
+    width: 100%;
+    height: 60px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0 24px;
+}
+
+form textarea{
+    width: 100%;
+    min-height: 140px;
+    resize: vertical; /* só aumenta na vertical */
+    height: 60px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 16px 24px;
+    line-height: 24px; /* pois vai ter mais de uma linha */
+}
+
+
+.button { /* usamos como classe, pois pode ser que tenham outros botões que não obrigatoriamente serão buttons do html*/
+    width: 100%;
+    height: 60px;
+    background: #e02041;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700; /* tamanho do texto negrito */
+    margin-top: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    transition: filter 0.2s; /*Para quando o filter mudar, ele mudar devagar*/
+}
+
+.button:hover{
+    filter: brightness(90%); /* filtro que diminui a claridade do input em 10%*/
+}
+
+/* Para ir para o cadastro e voltar para Loguin */
+
+.back-link{
+    display: flex; /* só para o texto e para o icone ficarem alinhados/centralizado*/
+    align-items: center; /* só para o texto e para o icone ficarem alinhados/centralizado*/
+    margin-top: 40px;
+    color: #41414d;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s; /* diminuir a opacidade quando passar o mouse por cima */
+}
+
+.back-link svg{ /* pegar o icone que ta ali dentro e colocar margem nele. Os react-icons são sempre svgs */
+    margin-right: 8px;
+}
+
+.back-link:hover{
+    opacity:0.8; /*diminui a opacidade em 0.8 */
+}
+
