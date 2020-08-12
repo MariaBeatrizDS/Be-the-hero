@@ -15,7 +15,7 @@ Professor: Diego Fernandes.
 
 Data: 25 a 28 de Março
 
-Linguagens: React, React Native e Node.js.
+Linguagens: React, SQLite, React Native e Node.js.
 
 
 #### Obs.: Tive alguns problemas com o mobile após finalizar a semana, então achei melhor não uppar para o Github
